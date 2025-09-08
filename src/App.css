@@ -50,6 +50,14 @@ body {
   }
 
   .pageUseToggle {
+    .positive {
+      color: lightgreen;
+    }
+
+    .negative {
+      color: red;
+    }
+
     .pageToggle {
       margin-bottom: 1rem;
     }

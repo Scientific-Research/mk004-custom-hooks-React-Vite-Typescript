@@ -35,7 +35,11 @@ export const PageUseToggle = ({ PageUseToggle }: IProp) => {
       </span> */}
 
       {/* Second Solution */}
-      
+      <span className={showAds ? 'positive' : 'negative'}>
+        {showAds
+          ? `Yes, show me advertisements`
+          : 'No, do not show me advertisements'}
+      </span>
     </div>
   );
 };
