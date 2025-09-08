@@ -7,13 +7,19 @@ interface IProp {
 export const PageUseToggle = ({ PageUseToggle }: IProp) => {
   const [showAds, setShowAds] = useState(false);
 
+  const handleShowAds = () => {
+    setShowAds(!showAds);
+  };
+
   return (
     <>
       <p className="pageToggle">
         Welcome to this site - PageUseToggle - {PageUseToggle}
       </p>
       <hr />
-      <button className="btnAds">Advertisements</button>
+      <button className="btnAds" onClick={handleShowAds}>
+        Advertisements
+      </button>
       {showAds
         ? 'Yes, show me advertisements'
         : 'No, do not show me advertisements'}
