@@ -1,7 +1,7 @@
-export const PageWelcome = () => {
+export const PageWelcome = ({ PageWelcome }: any) => {
   return (
     <>
-      <p>Welcome to this site - PageWelcome</p>
+      <p>Welcome to this site - PageWelcome - {PageWelcome}</p>
     </>
   );
 };
