@@ -1,6 +1,6 @@
 // import './App.css';
 
-import { PageWelcome } from './components/pageWelcome';
+import { PageWelcome } from './components/PageWelcome';
 import { PageUseToggle } from './components/PageUseToggle';
 import { PageUserFetch } from './components/PageUseFetch';
 import { NavLink, Routes, Route, Navigation } from 'react-router-dom';
@@ -9,7 +9,14 @@ function App() {
   return (
     <div className="App">
       <h1>Custom-Hooks-React-Vite-Typescript</h1>
-      <p>Welcome to this site!</p>
+
+      <nav>
+        <NavLink to="/welcome">Welcome</NavLink>
+        <NavLink to="/useToggle">useToggle</NavLink>
+        <NavLink to="/useFetch">useFetch</NavLink>
+      </nav>
+
+      <Routes></Routes>
 
       <PageWelcome PageWelcome={'hallo - PW'} />
       <PageUseToggle PageUseToggle={'hallo - UT'} />
