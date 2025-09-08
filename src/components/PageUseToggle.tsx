@@ -16,13 +16,22 @@ export const PageUseToggle = ({ PageUseToggle }: IProp) => {
       <p className="pageToggle">
         Welcome to this site - PageUseToggle - {PageUseToggle}
       </p>
+
       <hr />
+
       <button className="btnAds" onClick={handleShowAds}>
         Advertisements
       </button>
-      {showAds
-        ? 'Yes, show me advertisements'
-        : 'No, do not show me advertisements'}
+
+      {/* {showAds
+        ? `Yes, show me advertisements`
+        : 'No, do not show me advertisements'} */}
+
+      <span style={{ color: showAds ? 'green' : 'red' }}>
+        {showAds
+          ? `Yes, show me advertisements`
+          : 'No, do not show me advertisements'}
+      </span>
     </>
   );
 };
