@@ -19,6 +19,7 @@ body {
   nav {
     background-color: #222;
     padding: 0.5rem;
+    margin-bottom: 1rem;
 
     a {
       color: #aaa;
