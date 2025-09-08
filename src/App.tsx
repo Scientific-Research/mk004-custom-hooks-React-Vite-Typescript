@@ -9,7 +9,11 @@ import { PageStarter } from './components/PageStarter';
 function App() {
   return (
     <div className="App">
-      <h1>Custom-Hooks-React-Vite-Typescript</h1>
+      <h1>
+        <NavLink to="/" className="header">
+          Custom-Hooks-React-Vite-Typescript
+        </NavLink>
+      </h1>
 
       <nav>
         <NavLink to="/welcome">Welcome</NavLink>

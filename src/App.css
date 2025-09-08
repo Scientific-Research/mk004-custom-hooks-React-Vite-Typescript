@@ -12,8 +12,12 @@ body {
   color: #fff;
 
   h1 {
-    color: yellow;
     margin-bottom: 1rem;
+
+    .header {
+      color: yellow;
+      text-decoration: none;
+    }
   }
 
   nav {
