@@ -17,6 +17,15 @@ body {
     .header {
       color: yellow;
       text-decoration: none;
+
+      p {
+        display: inline;
+        margin-left: 0.5rem;
+      }
+
+      img {
+        width: 6rem;
+      }
     }
   }
 

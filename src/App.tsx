@@ -9,11 +9,20 @@ import { PageStarter } from './components/PageStarter';
 function App() {
   return (
     <div className="App">
-      <h1>
+      {/* <h1>
         <NavLink to="/" className="header">
           Custom-Hooks-React-Vite-Typescript
         </NavLink>
+      </h1> */}
+
+      <h1>
+        <NavLink to="/" className="header">
+          <img src="/images/react-icon.png" />
+          <p>Custom-Hooks-React-Vite-Typescript</p>
+        </NavLink>
       </h1>
+
+      {/* <img src="/public/react-icon.png" /> */}
 
       <nav>
         <NavLink to="/welcome">Welcome</NavLink>
