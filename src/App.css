@@ -68,5 +68,12 @@ body {
       font-size: large;
       margin-right: 0.5rem;
     }
+
+    .btnMails {
+      margin-top: 1rem;
+      padding: 0.5rem;
+      font-size: large;
+      margin-right: 0.5rem;
+    }
   }
 }
