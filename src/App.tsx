@@ -4,6 +4,7 @@ import { PageWelcome } from './components/PageWelcome';
 import { PageUseToggle } from './components/PageUseToggle';
 import { PageUseFetch } from './components/PageUseFetch';
 import { NavLink, Routes, Route, Navigation, Navigate } from 'react-router-dom';
+import { PageStarter } from './components/PageStarter';
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
         <NavLink to="/useToggle">useToggle</NavLink>
         <NavLink to="/useFetch">useFetch</NavLink>
 
-        {/* do the dasme like Navigate */}
-        <NavLink to="/"></NavLink>
+        {/* do the same like Navigate - we don't need it even here too!*/}
+        {/* <NavLink to="/"></NavLink> */}
       </nav>
 
       <Routes>
@@ -26,7 +27,7 @@ function App() {
         />
 
         {/* do the dasme like Navigate */}
-        <Route path="/" element={<PageWelcome PageWelcome={'hallo - PW'} />} />
+        <Route path="/" element={<PageStarter />} />
 
         <Route
           path="/useToggle"
