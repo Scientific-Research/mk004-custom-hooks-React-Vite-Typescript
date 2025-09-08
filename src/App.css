@@ -49,14 +49,16 @@ body {
     margin-top: 1rem;
   }
 
-  .pageToggle {
-    margin-bottom: 1rem;
-  }
+  .pageUseToggle {
+    .pageToggle {
+      margin-bottom: 1rem;
+    }
 
-  .btnAds {
-    margin-top: 1rem;
-    padding: 0.5rem;
-    font-size: large;
-    margin-right: 0.5rem;
+    .btnAds {
+      margin-top: 1rem;
+      padding: 0.5rem;
+      font-size: large;
+      margin-right: 0.5rem;
+    }
   }
 }
