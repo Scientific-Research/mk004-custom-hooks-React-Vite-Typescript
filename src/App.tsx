@@ -2,7 +2,7 @@
 
 import { PageWelcome } from './components/PageWelcome';
 import { PageUseToggle } from './components/PageUseToggle';
-import { PageUserFetch } from './components/PageUseFetch';
+import { PageUseFetch } from './components/PageUseFetch';
 import { NavLink, Routes, Route, Navigation } from 'react-router-dom';
 
 function App() {
@@ -16,11 +16,20 @@ function App() {
         <NavLink to="/useFetch">useFetch</NavLink>
       </nav>
 
-      <Routes></Routes>
-
-      <PageWelcome PageWelcome={'hallo - PW'} />
-      <PageUseToggle PageUseToggle={'hallo - UT'} />
-      <PageUserFetch PageUserFetch={'hallo - UF'} />
+      <Routes>
+        <Route
+          path="/welcome"
+          element={<PageWelcome PageWelcome={'hallo - PW'} />}
+        />
+        <Route
+          path="/useToggle"
+          element={<PageUseToggle PageUseToggle={'hallo - UT'} />}
+        />
+        <Route
+          path="/useFetch"
+          element={<PageUseFetch PageUseFetch={'hallo - UF'} />}
+        />
+      </Routes>
     </div>
   );
 }

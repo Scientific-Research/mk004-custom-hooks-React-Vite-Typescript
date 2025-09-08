@@ -1,11 +1,11 @@
 interface Iprop {
-  PageUserFetch: string;
+  PageUseFetch: string;
 }
 
-export const PageUserFetch = ({ PageUserFetch }: Iprop) => {
+export const PageUseFetch = ({ PageUseFetch }: Iprop) => {
   return (
     <>
-      <p>Welcome to this site - PageUserFetch - {PageUserFetch}</p>
+      <p>Welcome to this site - PageUseFetch - {PageUseFetch}</p>
     </>
   );
 };
